@@ -5,7 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ListPerformanceTest {
-
     public static void main(String[] args) {
         int operationsCount = 1000;
 
