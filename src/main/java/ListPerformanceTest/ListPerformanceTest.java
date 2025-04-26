@@ -4,7 +4,15 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Класс для тестирования производительности коллекций ArrayList и LinkedList.
+ */
 public class ListPerformanceTest {
+    /**
+     * Главный метод, который запускает тестирование для ArrayList и LinkedList.
+     *
+     * @param args аргументы командной строки (не используются)
+     */
     public static void main(String[] args) {
         int operationsCount = 1000;
 
@@ -15,6 +23,13 @@ public class ListPerformanceTest {
         testListPerformance(new LinkedList<>(), operationsCount);
     }
 
+    /**
+     * Метод для тестирования производительности коллекций.
+     * Он выполняет 3 основные операции (add, get, remove) на коллекции заданное количество раз.
+     *
+     * @param list коллекция, на которой выполняются операции
+     * @param operationsCount количество операций для тестирования
+     */
     public static void testListPerformance(List<Integer> list, int operationsCount) {
         long startTime = System.nanoTime();
         for (int i = 0; i < operationsCount; i++)
